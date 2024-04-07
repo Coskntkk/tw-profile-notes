@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Tw Profile Notes",
+    "description": "Tool for leaving notes to Twitter profiles.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://twitter.com/*"
+    ]
+}
