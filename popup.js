@@ -1,11 +1,11 @@
 let username = ""
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
     let url = tabs[0].url;
-    if (url.replace('https://twitter.com/', '') === url) {
+    if (url.replace('https://x.com/', '') === url) {
         document.getElementById("username").innerText = "Not in twitter."
     } else {
         let body = document.getElementsByTagName("body")[0]
-        let temp = url.replace('https://twitter.com/', '')
+        let temp = url.replace('https://x.com/', '')
         let usernamex = temp.split('/')[0];
         username = usernamex
         document.getElementById("username").innerText = usernamex
